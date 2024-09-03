@@ -1,41 +1,5 @@
 # Desafio de API REST
 
-## Instruções para entrega
-
-1. Faça o fork deste repositório
-2. Clone o repositório forkado
-3. Edite o final deste README colocando o seu nome no local indicado (não é necessário clonar o repositório. Você pode fazer esse passo pelo próprio GitHub)
-4. Abra um pull request colocando o seu nome e sobrenome no título do pull request
-5. Copie o link do seu pull request (PR) e cole-o na Plataforma do Aluno no local indicado para a entrega (o link do pull request termina com "/pull/`NUMERO_DO_PULL_REQUEST`")
-
-#### ⚠️ Importante: o passo a passo acima visa priorizar a entrega do desafio logo nos primeiros minutos. Se desejar, pode deixar para fazer o pull request (PR) após o término do projeto
-
-#### ⚠️ Importante: você NÃO deve abrir mais de um pull request. Ao atualizar a branch main do seu repositório remoto (git push), seu PR será atualizado também
-
-#### ⚠️ Importante: se o pull request não for criado e enviado na plataforma, o feedback não será fornecido, e o desafio constará como não entregue
-
-## Primeiros passos
-
-1. Clone o projeto
-2. Use o comando `npm install` para instalar as dependências
-3. A porta configurada para sua aplicação rodar é a 3000. Caso deseje trocá-la, mude o valor da variável "PORTA" que está dentro do arquivo ".env"
-4. Use o comando `npm run dev` para rodar o projeto
-
-#### ⚠️ Importante: repare que o projeto já inicia com uma estrutura inicial. Você não deve mexer nessa estrutura
-
-## Como testar seu código e saber a nota
-
-Para testar seu código, use o comando:
-
-- `npm run test`: esse comando irá mostrar no terminal sua nota e irá gerar uma pasta chamada "resultados". Dentro da pasta terá um arquivo chamado "relatorio.html", que é um relatório detalhando os resultados dos testes. Esse relatório será aberto automaticamente no seu navegador
-
-#### ⚠️ Importante: se por algum motivo o relatório não for aberto automaticamente no seu navegador, sugerimos que instale uma extensão no VS Code chamada "Live Server". Após instalada, clique com o botão direito em cima do arquivo "relatorio.html" e clique em "Abrir com Live Server" ("Open with Live Server")
-
-## Dicas
-
-- Faça commits regulares
-- Quando terminar, lembre-se de atualizar seu repositório remoto (`git push`)
-
 ## Descrição do desafio
 
 Você acabou de ser contratado pela melhor empresa de tecnologia do mundo: a **CUBOS**.
@@ -51,39 +15,16 @@ Seu papel é construir uma API RESTful que permita ao usuário:
 - Listar compras
 - Cancelar uma compra
 
-#### ⚠️ Importante: sempre que a validação de uma requisição falhar, responda com código de erro e mensagem adequada à situação. Essa mensagem, que deverá ser exatamente a pedida em cada cenário, deve ser o valor de uma propriedade chamada "mensagem" (veja o exemplo abaixo)
+## Primeiros passos
 
-**Exemplo:**
-
-```json
-// Quando é informado um id de uma compra que não existe:
-// HTTP Status 404
-{
-  "mensagem": "Compra não encontada!"
-}
-```
+1. Clone o projeto
+2. Use o comando `npm install` para instalar as dependências
+3. A porta configurada para sua aplicação rodar é a 3000. Caso deseje trocá-la, mude o valor da variável "PORTA" que está dentro do arquivo ".env"
+4. Use o comando `npm run dev` para rodar o projeto
 
 ### Persistências dos dados
 
 Os dados serão persistidos em memória, no objeto existente dentro do arquivo `src/bancoDeDados.ts`.
-
-#### ⚠️ Importante: você NÃO deve, em nenhuma hipótese, editar o arquivo src/bancoDeDados.ts
-
-### Estrutura do objeto no arquivo `bancoDeDados.ts`
-
-```ts
-{
-    eventos: [
-        // array de eventos cadastrados no site
-    ],
-    usuarios: [
-        // array de usuários cadastrados no site
-    ],
-    compras: [
-        // array de compras cadastradas no site
-    ],
-}
-```
 
 ### Requisitos obrigatórios
 
